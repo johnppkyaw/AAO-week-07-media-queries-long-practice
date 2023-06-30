@@ -58,3 +58,9 @@ nav a.selected {
         display: none;
     }
 }
+
+@media screen and (height < 640px) {
+    header.homepage {
+        height: 220px;
+    }
+}
