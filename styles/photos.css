@@ -24,13 +24,49 @@
 }
 
 /* Your code here */
-@media print {
-    .notPrinted {
-        display: none;
+@media screen and (width > 600px) and (width <= 900px) {
+    .photo-card img {
+        width: 150px;
+        margin-right: 20px;
     }
-
-    body {
-        background-color: white;
+    .photo-card .content {
+        display: flex;
+        flex-direction: row;
     }
+    .photo-card p {
+        width: 100%;
+    }
+    .photo-card {
+        text-align: left;
+    }
+}
 
+@media screen and (width > 900px) {
+    .photo-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+}
+
+@media screen and (width > 1200px) {
+    .photo-card img {
+        width: 150px;
+        margin-right: 20px;
+    }
+    .photo-card .content {
+        display: flex;
+        flex-direction: row;
+    }
+    .photo-card p {
+        width: 100%;
+    }
+    .photo-card {
+        text-align: left;
+    }
+    .photo-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
 }
