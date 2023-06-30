@@ -65,6 +65,7 @@ nav a.selected {
     }
 }
 
+/* Desktop user */
 @media screen and (width > 480px) {
     p > a, .photo-card > a {
         text-decoration: none;

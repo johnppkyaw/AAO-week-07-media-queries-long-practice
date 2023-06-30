@@ -19,3 +19,13 @@ a.backButton {
 }
 
 /* Your code here */
+@media print {
+    .notPrinted {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+}
