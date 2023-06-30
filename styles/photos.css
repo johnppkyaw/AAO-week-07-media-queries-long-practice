@@ -70,3 +70,21 @@
         gap: 5px;
     }
 }
+
+@media print {
+    .photo-card img {
+        width: 150px;
+        margin-right: 20px;
+    }
+    .photo-card .content {
+        display: flex;
+        flex-direction: row;
+    }
+    .photo-card p {
+        width: 100%;
+    }
+    .photo-card {
+        text-align: left;
+        page-break-inside: avoid;
+    }
+}
