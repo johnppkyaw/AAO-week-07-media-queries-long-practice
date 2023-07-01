@@ -84,4 +84,16 @@
     flex: 1 1 2%;
 }
 
-/* Your code here */
+@media print {
+    .timeline, .timeline-labels {
+        min-width: 0px;
+    }
+    .timeline-scroll-area {
+      overflow-x: auto;
+      transform-origin: left top;
+      transform: scale(0.5);
+      width: 200%;
+    }
+
+
+  }
