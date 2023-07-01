@@ -24,21 +24,28 @@
 }
 
 /* Your code here */
-@media screen and (width > 600px) and (width <= 900px) {
-    .photo-card img {
+@media print, screen and (width > 600px) and (width <= 900px) {
+    /* .photo-card img {
         width: 150px;
         margin-right: 20px;
+    } */
+    .photo-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        page-break-inside: avoid;
     }
     .photo-card .content {
         display: flex;
         flex-direction: row;
+        gap: 15px;
     }
-    .photo-card p {
+    /* .photo-card p {
         width: 100%;
     }
     .photo-card {
         text-align: left;
-    }
+    } */
 }
 
 @media screen and (width > 900px) {
@@ -68,23 +75,5 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
-    }
-}
-
-@media print {
-    .photo-card img {
-        width: 150px;
-        margin-right: 20px;
-    }
-    .photo-card .content {
-        display: flex;
-        flex-direction: row;
-    }
-    .photo-card p {
-        width: 100%;
-    }
-    .photo-card {
-        text-align: left;
-        page-break-inside: avoid;
     }
 }
